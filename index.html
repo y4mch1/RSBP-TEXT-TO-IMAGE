@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+          <input type="checkbox" id="nav-check">
+          <div class="nav-header">
+            <div class="nav-title">
+             KiArt
+            </div>
+          </div>
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+        </nav>
+        </header>
+        <div class="moving">
+          <h1 class="name">Hello, Generate Your Art.</h1>
+          <p class="subtitle">RSBP Text To Image</p>
+          </div>
+        <section>
+          <div class="hero"> 
+          <img class="herop hover:-translate-y-2" src="6.png">
+          <img class="herop  hover:-translate-y-2" src="8.png">
+          <img class="herop  hover:-translate-y-2" src="15.png">
+          <img class="herop  hover:-translate-y-2" src="7.png">
+          <img class="herop  hover:-translate-y-2" src="5.png">
+          <img class="herop  hover:-translate-y-2" src="14.png">
+          </div>
+        </section>
+        <div class="shadow-xl py-1 pb-2 mx-32 my-10 rounded-xl"> 
+        <div class="flex my-40 mx-32">
+            <form class="gen-form py-22 ">
+                <input type="text" id="user-prompt" placeholder="e.g pink hair, glasses, cute boys" autocomplete="off">
+                <button type="button" id="generate">Generate</button>
+                <button type="button" id="reset">Reset</button>
+              </form>
+        </div>
+        <div class="ml-36 -mt-36" id="loading">Generating by AI ter GG...</div>
+        <div class="image-result mx-36">
+            <div class="result">
+              <div id="image-grid"></div>
+            </div>
+        </div>
+      </div>
+ 
+      
+  <script src="script.js"></script>
+</body>
+</html>
